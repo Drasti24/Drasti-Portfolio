@@ -22,33 +22,110 @@
         </div>
     </header>
 
-
-
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h2>Hello, I'm <span class="highlight">Drasti Patel</span></h2>
                 <p>Software Developer | Full Stack | Systems Programming</p>
                 <a class="resume-button" href="assets/Drasti_Patel_Resume.pdf" target="_blank">Download Resume</a>
+
                 <h3>About Me</h3>
-                <p>I'm a Computer Science student focused on full-stack web dev, system programming, and real-time monitoring systems.</p>
+                <p>
+                    I'm a Computer Science student focused on full-stack web dev, system programming,
+                    and real-time monitoring systems.
+                </p>
             </div>
+
             <div class="hero-img">
                 <img src="assets/drasti.jpg" alt="Drasti Patel">
             </div>
         </div>
     </section>
-
-
+    <!-- ==== SKILLS SECTION ==== -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>C++, C#, Python</li>
-            <li>ASP.NET Core, EF Core, Flask, React (basic)</li>
-            <li>SQL Server, PostgreSQL, SQLite</li>
-            <li>Multithreading, Networking (Sockets), REST APIs</li>
-            <li>Tools: VS, Git, Docker, Postman, Locust, JMeter</li>
-        </ul>
+        <div class="skill-bubbles">
+            <button class="skill-btn" data-category="languages">Languages</button>
+            <button class="skill-btn" data-category="os">Operating Systems</button>
+            <button class="skill-btn" data-category="ides">IDEs & Software</button>
+            <button class="skill-btn" data-category="databases">Databases & Analytics</button>
+            <button class="skill-btn" data-category="cloud">Cloud & DevOps</button>
+            <button class="skill-btn" data-category="security">Security & Testing</button>
+            <button class="skill-btn" data-category="design">Design Tools</button>
+        </div>
+
+        <div class="skill-details">
+            <div class="skill-category" id="languages">
+                <span>Languages:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"><p>C</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"><p>C++</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"><p>C#</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><p>Java</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><p>Python</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>SQL</p></div>
+                    <div><img src="https://www.r-project.org/logo/Rlogo.png"><p>R</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="os">
+                <span>Operating Systems:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"><p>Windows</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"><p>Kali Linux</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"><p>Ubuntu</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="ides">
+                <span>IDEs & Software:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"><p>Visual Studio</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"><p>Eclipse</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg"><p>Qt</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="databases">
+                <span>Databases & Analytics:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>MySQL</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"><p>SQLite</p></div>
+                    <div><img src="https://img.icons8.com/color/48/000000/azure-1.png"><p>Azure</p></div>
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Google_Colaboratory_Logo.svg"><p>Google Colab</p></div>
+                    <div><img src="https://img.icons8.com/color/48/000000/power-bi.png"><p>Power BI</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="cloud">
+                <span>Cloud & DevOps:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"><p>AWS</p></div>
+                    <div><img src="https://img.icons8.com/color/48/000000/azure-1.png"><p>Azure DevOps</p></div>
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><p>Docker</p></div>
+                    <div><img src="https://avatars.githubusercontent.com/u/29327292?s=280&v=4"><p>Cloudera</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="security">
+                <span>Security & Testing:</span>
+                <div class="icon-grid">
+                    <div><img src="https://seeklogo.com/images/S/sonarqube-logo-8E748CAD27-seeklogo.com.png"><p>SonarQube</p></div>
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Nessus_logo.png"><p>Nessus</p></div>
+                    <div><img src="https://avatars.githubusercontent.com/u/1479450?s=280&v=4"><p>Metasploit</p></div>
+                    <div><img src="https://www.blazemeter.com/hs-fs/hubfs/Blog/2018/Blazemeter-Jmeter.png"><p>JMeter</p></div>
+                    <div><img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"><p>Postman</p></div>
+                </div>
+            </div>
+
+            <div class="skill-category" id="design">
+                <span>Design Tools:</span>
+                <div class="icon-grid">
+                    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"><p>Figma</p></div>
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg"><p>Adobe XD</p></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
@@ -129,6 +206,18 @@
     </div>
     </section>
 
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach out to me via - </p>
+
+        <div class="contact-list">
+            <p><i class="fas fa-envelope"></i> drasti.patel2402@gmail.com</p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Drasti24" target="_blank">github.com/Drasti24</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/pateldrasti/" target="_blank">linkedin.com/in/pateldrasti</a></p>
+        </div>
+    </section>
+
+
 
     <footer>
         <p>&copy; 2025 Drasti Patel</p>
@@ -151,6 +240,14 @@
             }
 
             lastScrollY = currentY;
+        });
+        document.querySelectorAll('.skill-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-category');
+                document.querySelectorAll('.skill-category').forEach(section => {
+                    section.style.display = section.id === target ? 'block' : 'none';
+                });
+            });
         });
     </script>
 
