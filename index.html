@@ -1,65 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drasti Patel | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header id="main-header">
+        <div class="header-inner">
+            <h1 class="site-title">Drasti Patel</h1>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#timeline">Experiences</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <section id="home">
-    <h2>Hello, I'm [Your Name]</h2>
-    <p>Software Developer | Full Stack | Systems Programming</p>
-    <a href="assets/Drasti_Patel_Resume.pdf" target="_blank">Download Resume</a>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <!-- Repeat this block for each project -->
-    <div class="project">
-      <h3>FleetFuel Telemetry Monitor</h3>
-      <p>Real-time server-client system tracking airplane fuel usage using C++ and Winsock2. Supports multithreaded client handling.</p>
-      <p><strong>Tech:</strong> C++, Sockets, Multithreading, Visual Studio</p>
-      <a href="https://github.com/Drasti24/fleetfuel-monitor">View on GitHub</a>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Hello, I'm <span class="highlight">Drasti Patel</span></h2>
+                <p>Software Developer | Full Stack | Systems Programming</p>
+                <a class="resume-button" href="assets/Drasti_Patel_Resume.pdf" target="_blank">Download Resume</a>
+                <h3>About Me</h3>
+                <p>I'm a Computer Science student focused on full-stack web dev, system programming, and real-time monitoring systems.</p>
+            </div>
+            <div class="hero-img">
+                <img src="assets/drasti.jpg" alt="Drasti Patel">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++, C#, Python</li>
+            <li>ASP.NET Core, EF Core, Flask, React (basic)</li>
+            <li>SQL Server, PostgreSQL, SQLite</li>
+            <li>Multithreading, Networking (Sockets), REST APIs</li>
+            <li>Tools: VS, Git, Docker, Postman, Locust, JMeter</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>FleetFuel Telemetry Monitor</h3>
+            <p>Real-time server-client system tracking airplane fuel usage using C++ and Winsock2. Supports multithreaded client handling.</p>
+            <p><strong>Tech:</strong> C++, Sockets, Multithreading, Visual Studio</p>
+            <a href="https://github.com/Drasti24/Group04-Project6-Client-Server.git">View on GitHub</a>
+        </div>
+    </section>
+
+
+    <!-- Mark's -->
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <a href="https://www.marks.com" target="_blank">
+                <img src="assets/marks-logo.jpg" alt="Mark’s Logo">
+            </a>
+        </div>
+        <div class="timeline-content">
+            <h3>Mark’s, Waterloo – Sales Associate</h3>
+            <p class="exp-dates">Oct 2022 – Present</p>
+            <ul>
+                <li>Surpassed sales targets by delivering excellent customer service.</li>
+                <li>Managed inventory and merchandising for smooth operations.</li>
+                <li>Trained and mentored new staff in a customer-focused environment.</li>
+            </ul>
+        </div>
     </div>
-  </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a Computer Science student focused on full-stack web dev, system programming, and real-time monitoring systems.</p>
-  </section>
+    <!-- SIIP -->
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <a href="https://www.conestogac.on.ca/subsidized-training/health/supporting-inclusion-through-intergenerational-partnerships" target="_blank">
+                <img src="assets/siip-logo.jpg" alt="SIIP Logo">
+            </a>
+        </div>
+        <div class="timeline-content">
+            <h3>SIIP – Volunteer</h3>
+            <p class="exp-dates">Jan 2025 – Present</p>
+            <p>Supporting intergenerational inclusion through community work.</p>
+        </div>
+    </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>C++, C#, Python</li>
-      <li>ASP.NET Core, EF Core, Flask, React (basic)</li>
-      <li>SQL Server, PostgreSQL, SQLite</li>
-      <li>Multithreading, Networking (Sockets), REST APIs</li>
-      <li>Tools: VS, Git, Docker, Postman, Locust, JMeter</li>
-    </ul>
-  </section>
+    <!-- Orientation Volunteer -->
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <a href="https://www.conestogac.on.ca/student-engagement" target="_blank">
+                <img src="assets/conestoga-logo.jpg" alt="Conestoga Logo">
+            </a>
+        </div>
+        <div class="timeline-content">
+            <h3>Orientation Volunteer – Conestoga College</h3>
+            <p class="exp-dates">2023 – 2024</p>
+            <p>Helped new students transition smoothly into college life.</p>
+        </div>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/Drasti24">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/pateldrasti/">linkedin.com/in/yourprofile</a></p>
-  </section>
+    <!-- Pledge A Smile -->
+    <div class="timeline-item">
+        <div class="timeline-icon">
+            <a href="https://pledgeasmile.com/" target="_blank">
+                <img src="assets/pledgeasmile-logo.jpg" alt="Pledge A Smile Logo">
+            </a>
+        </div>
+        <div class="timeline-content">
+            <h3>Pledge A Smile Foundation – Outreach Coordinator</h3>
+            <p class="exp-dates">Mar 2022 – Jul 2022</p>
+            <ul>
+                <li>Analyzed donation trends and volunteer engagement.</li>
+                <li>Ran social media campaigns to boost awareness.</li>
+                <li>Streamlined internal data processes for efficiency.</li>
+            </ul>
+        </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+    </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Drasti Patel</p>
+    </footer>
+
+    <script>
+        const header = document.getElementById('main-header');
+
+        let lastScrollY = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentY = window.scrollY;
+
+            if (currentY > 80 && !header.classList.contains('shrink')) {
+                header.classList.add('shrink');
+            }
+
+            if (currentY <= 80 && header.classList.contains('shrink')) {
+                header.classList.remove('shrink');
+            }
+
+            lastScrollY = currentY;
+        });
+    </script>
+
+
 </body>
 </html>
